@@ -15,12 +15,12 @@ type PropForm = {
 
 function Form({ dltBtn, pointBtn }: PropForm) {
   const [assistanceValid, setAssistanceValid] = useState('');
-  const [urlValid, setUrlValid] = useState('');
   const [signal, setSignal] = useState('');
-  const [loginValid, setLoginValid] = useState('');
-  const [apparentBtn, setApparentBtn] = useState(false);
   const checkSize = signal.length >= 8;
   const checkLengthy = signal.length <= 16;
+  const [urlValid, setUrlValid] = useState('');
+  const [loginValid, setLoginValid] = useState('');
+  const [apparentBtn, setApparentBtn] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

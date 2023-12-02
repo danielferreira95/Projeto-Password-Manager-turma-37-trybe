@@ -54,8 +54,6 @@ function App() {
         <div>
           <label>
             <input
-              type="checkbox"
-              checked={ !isShShow }
               onChange={ handleToggleVisible }
             />
           </label>
